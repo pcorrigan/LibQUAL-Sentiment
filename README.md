@@ -19,6 +19,14 @@ This project is a recipe to:
 - Provide a series of SQL statements and custome queries
 - Visualize the data
 
+comments.pl
+This program will perform document level sentiment analysis on your comments and store your results in Sqlite3 database for analysis.
+Dependencies:
+- The SQlite database availalbe from https://www.sqlite.org/
+- The SQLite DBI driver **DBD::SQLite** - install using **cpan DBD::SQLite**
+- The AlchemyAPI Perl SDK available from AlchemyAPI.com (You'll need your own api key, also available from AlchemyAPI.com to run this)
+
+
 Disclaimer
 
 Use this software at your risk. 
