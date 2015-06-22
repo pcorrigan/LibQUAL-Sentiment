@@ -16,14 +16,13 @@ use DBD::SQLite;
 my $dbh = DBI->connect("dbi:SQLite:dbname=libqual.db","","");
 my $parser = XML::LibXML->new();
 my $recno=1;
-
+# Multiline records - delimiting with first field tag
 while (defined ($_ = do { local $/ = "textbox11:"; <> })) {
 	print "Recno:> ",$recno, "\n";
 	$recno++;
 	my $alchemyObj = new AlchemyAPI();
 	my $keywordParams = new AlchemyAPI_KeywordParams();
      	$keywordParams->SetSentiment(1);
-		#$keywordParams->keywordExtractMode('strict');
 	if ($alchemyObj->LoadKey("api_key.txt") eq "error") {die "Error load API key";}
 	my ($commentid) = /id: (\d+)/;
 	my ($date) = /SubmitDate: (.*)/gm;
