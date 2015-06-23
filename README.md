@@ -30,6 +30,4 @@ Dependencies:
 - The AlchemyAPI Perl SDK available from AlchemyAPI.com (You'll need your own api key, also available from AlchemyAPI.com to run this)
 
 
-Disclaimer
 
-Use this software at your risk. 
