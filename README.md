@@ -16,7 +16,7 @@ This project is a recipe to:
 - Submit each comment to the AlchemyAPI for both document and keyword level sentiment analysis
 - Store the LibQUAL+ data together with *per comment*, and *per keyword* sentiment scores in a SQlite database. 
 - Additionally store Sentiment polarity and keyword relevance.
-- Provide a series of SQL statements and custome queries
+- Provide a series of SQL statements and custom queries
 - Visualize the data
 
 Slideshare.net overview:
